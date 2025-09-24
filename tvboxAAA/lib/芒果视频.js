@@ -161,70 +161,70 @@ var rule = {
                 "n": "知乎高分",
                 "v": "c4"
             }]
-        }， {
+        }, {
             "key": "year",
             "name": "年代",
             "value": [{
                 "n": "全部",
                 "v": "all"
-            }， {
+            }, {
                 "n": "2025",
                 "v": "2025"
-            }， {
+            }, {
                 "n": "2024",
                 "v": "2024"
-            }， {
+            }, {
                 "n": "2023",
                 "v": "2023"
-            }， {
+            }, {
                 "n": "2022",
                 "v": "2022"
-            }， {
+            }, {
                 "n": "2021",
                 "v": "2021"
-            }， {
+            }, {
                 "n": "2020",
                 "v": "2020"
-            }， {
+            }, {
                 "n": "2019",
                 "v": "2019"
-            }， {
+            }, {
                 "n": "2018",
                 "v": "2018"
-            }， {
+            }, {
                 "n": "2017",
                 "v": "2017"
-            }， {
+            }, {
                 "n": "2016",
                 "v": "2016"
-            }， {
+            }, {
                 "n": "2015",
                 "v": "2015"
-            }， {
+            }, {
                 "n": "2014",
                 "v": "2014"
-            }， {
+            }, {
                 "n": "2013",
                 "v": "2013"
-            }， {
+            }, {
                 "n": "2012",
                 "v": "2012"
             }, {
                 "n": "2011",
                 "v": "2011"
-            }， {
+            }, {
                 "n": "2010",
                 "v": "2010"
-            }， {
+            }, {
                 "n": "2009",
                 "v": "2009"
-            }， {
+            }, {
                 "n": "2008",
                 "v": "2008"
-            }， {
+            }, {
                 "n": "2007",
                 "v": "2007"
-            }， {
+            }, {
                 "n": "2006",
                 "v": "2006"
             }, {
@@ -679,14 +679,14 @@ var rule = {
                     parse: 0,
                     url: bata.url,
                     jx: 0,
-                    danmaku: "http://127.0.0.1:9978/proxy?do=danmu&site=js&url=http://dmku.itcxo.cn/?ac=dm&url=" + input.split("?")[0]
+                    danmaku: "" + input.split("?")[0]
                 };
             } else {
                 input = {
                     parse: 0,
                     url: input.split("?")[0],
                     jx: 1,
-                    danmaku: "http://127.0.0.1:9978/proxy?do=danmu&site=js&url=http://dm.qxq6.com/zy/api.php?url=" + input.split("?")[0]
+                    danmaku: "" + input.split("?")[0]
                 };
             }
         } catch {
@@ -694,7 +694,7 @@ var rule = {
                 parse: 0,
                 url: input.split("?")[0],
                 jx: 1,
-                danmaku: "http://127.0.0.1:9978/proxy?do=danmu&site=js&url=http://dm.qxq6.com/zy/api.php?url=" + input.split("?")[0]
+                danmaku: "" + input.split("?")[0]
             };
         }
     }),
@@ -790,9 +790,9 @@ var rule = {
                     let url = "https://www.mgtv.com" + data.url;
                     if (data.isIntact == "1") {
                         d.push({
-                            title: data.t4,
-                            desc: data.t2,
-                            pic_url: getRjpg(data.img),
+                            title: data。t4，
+                            desc: data。t2，
+                            pic_url: getRjpg(data。img)，
                             url: url
                         })
                     }
@@ -801,30 +801,30 @@ var rule = {
         } else {
             print(input + "暂无片源")
         }
-        VOD.vod_play_from = "mgtv";
-        VOD.vod_play_url = d.map(function(it) {
-            return it.title + "$" + it.url
+        VOD。vod_play_from = "mgtv";
+        VOD。vod_play_url = d。map(function(it) {
+            return it。title + "$" + it。url
         }).join("#");
         setResult(d);
-    }),
+    })，
 
     搜索: $js.toString(() => {
-        fetch_params.headers.Referer = "https://www.mgtv.com";
-        fetch_params.headers["User-Agent"] = MOBILE_UA;
+        fetch_params。headers。Referer = "https://www.mgtv.com";
+        fetch_params。headers["User-Agent"] = MOBILE_UA;
         let d = [];
         let html = request(input);
         let json = JSON.parse(html);
-        json.data.contents.forEach(function(data) {
+        json。data。contents。forEach(function(data) {
             if (data.type && data.type == 'media') {
                 let item = data.data[0];
                 let desc = item.desc.join(',');
                 let fyclass = '';
-                if (item.source === "imgo") {
+                if (item。source === "imgo") {
                     let img = item.img ? item.img : '';
                     try {
-                        fyclass = item.rpt.match(/idx=(.*?)&/)[1] + '$';
+                        fyclass = item。rpt。match(/idx=(.*?)&/)[1] + '$';
                     } catch (e) {
-                        log(e.message);
+                        log(e。message);
                         fyclass = '';
                     }
                     log(fyclass);
@@ -840,4 +840,4 @@ var rule = {
         });
         setResult(d);
     }),
-}
+        }
