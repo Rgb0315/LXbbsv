@@ -230,7 +230,7 @@
         "site": 2
       },
       "timeout": 10
-    },
+    }，
       {
       "key": "加菲",
       "name": "🐱加菲┃App",
@@ -240,7 +240,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10
-    },
+    }，
     {
       "key": "云云",
       "name": "☁️云云┃App",
@@ -250,7 +250,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10
-    },
+    }，
     {
       "key": "小苹果",
       "name": "🍎苹果┃直连",
@@ -260,7 +260,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10
-    },
+    }，
     {
       "key": "雄鹰",
       "name": "🦅雄鹰┃App",
@@ -270,7 +270,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10
-    },
+    }，
     {
       "key": "咖啡",
       "name": "🍫咖啡┃App",
@@ -280,7 +280,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10
-    },
+    }，
     {
       "key": "厂长",
       "name": "🌸厂长┃直连",
@@ -290,7 +290,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10
-    },
+    }，
     {
       "key": "️爱看Bot",
       "name": "⛅️爱看┃直连",
@@ -300,7 +300,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10
-    },
+    }，
     {
       "key": "新6V",
       "name": "🧲新6V┃磁力",
@@ -323,7 +323,7 @@
     {
       "name": "超级轮询",
       "type": "1",
-      "url": "",
+      "url": "http://chaoqianys.top:98/api/jsonindex.php/?key=9BinSPw8lGc9OVvoBa&url=",
       "ext": {
         "flag": [
           "qq",
@@ -341,54 +341,54 @@
           "芒果",
           "tnmb",
           "seven",
-          "bilibili",
+          "bilibili"，
           "1905"
-        ],
+        ]，
         "header": {
           "User-Agent": "okhttp/4.9.1"
         }
       }
     }
-  ],
+  ]，
   "rules": [
     {
       "name": "头条",
       "hosts": [
         "toutiaovod.com"
-      ],
+      ]，
       "regex": [
         "video/tos/cn"
       ]
-    },
+    }，
     {
       "name": "火山",
       "hosts": [
         "huoshan.com"
-      ],
+      ]，
       "regex": [
         "item_id="
       ]
-    },
+    }，
     {
       "name": "抖音",
       "hosts": [
         "douyin.com"
-      ],
+      ]，
       "regex": [
         "is_play_url="
       ]
-    },
+    }，
     {
       "name": "饭团点击",
       "hosts": [
-        "dadagui",
-        "freeok",
+        "dadagui"，
+        "freeok"，
         "dadagui"
-      ],
+      ]，
       "script": [
         "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"#start\").click();"
       ]
-    },
+    }，
     {
       "name": "毛驴点击",
       "hosts": [
@@ -439,7 +439,7 @@
       "name": "DNSWatch",
       "url": "https://resolver2.dns.watch/dns-query",
       "ips": [
-        "84.200.69.80",
+        "84.200.69.80"，
         "84.200.70.40"
       ]
     },
@@ -447,54 +447,54 @@
       "name": "Quad9",
       "url": "https://dns.quad9.net/dns-quer",
       "ips": [
-        "9.9.9.9",
+        "9.9.9.9"，
         "149.112.112.112"
       ]
     }
-  ],
+  ]，
   "hosts": [
     "cache.ott.*.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com",
-    "cache.ott.ystenlive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com",
-    "cache.ott.bestlive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com",
-    "cache.ott.wasulive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com",
-    "cache.ott.fifalive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com",
+    "cache.ott.ystenlive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com"，
+    "cache.ott.bestlive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com"，
+    "cache.ott.wasulive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com"，
+    "cache.ott.fifalive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com"，
     "cache.ott.hnbblive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com"
-  ],
+  ]，
   "flags": [
-    "youku",
-    "优酷",
-    "优 酷",
-    "优酷视频",
-    "qq",
-    "腾讯",
-    "腾 讯",
-    "腾讯视频",
-    "iqiyi",
-    "qiyi",
-    "奇艺",
+    "youku"，
+    "优酷"，
+    "优 酷"，
+    "优酷视频"，
+    "qq"，
+    "腾讯"，
+    "腾 讯"，
+    "腾讯视频"，
+    "iqiyi"，
+    "qiyi"，
+    "奇艺"，
     "爱奇艺",
-    "爱 奇 艺",
+    "爱 奇 艺"，
     "m1905",
-    "xigua",
-    "letv",
-    "leshi",
-    "乐视",
-    "乐 视",
-    "sohu",
-    "搜狐",
-    "搜 狐",
-    "搜狐视频",
+    "xigua"，
+    "letv"，
+    "leshi"，
+    "乐视"，
+    "乐 视"，
+    "sohu"，
+    "搜狐"，
+    "搜 狐"，
+    "搜狐视频"，
     "tudou",
-    "pptv",
-    "mgtv",
-    "芒果",
-    "imgo",
-    "芒果TV",
-    "芒 果 T V",
-    "bilibili",
-    "哔 哩",
+    "pptv"，
+    "mgtv"，
+    "芒果"，
+    "imgo"，
+    "芒果TV"，
+    "芒 果 T V"，
+    "bilibili"，
+    "哔 哩"，
     "哔 哩 哔 哩"
-  ],
+  ]，
   "ijk": [
     {
       "group": "软解码",
@@ -503,27 +503,27 @@
           "category": 4,
           "name": "opensles",
           "value": "0"
-        },
+        }，
         {
           "category": 4,
           "name": "overlay-format",
           "value": "842225234"
-        },
+        }，
         {
           "category": 4,
           "name": "framedrop",
           "value": "1"
-        },
+        }，
         {
           "category": 4,
           "name": "soundtouch",
           "value": "1"
-        },
+        }，
         {
           "category": 4,
           "name": "start-on-prepared",
           "value": "1"
-        },
+        }，
         {
           "category": 1,
           "name": "http-detect-range-support",
