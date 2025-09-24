@@ -1,4 +1,4 @@
-globalThis.vod1 = function(ids) {
+globalThis。vod1 = function(ids) {
     let html1 = request('https://pbaccess.video.qq.com/trpc.videosearch.mobile_search.MultiTerminalSearch/MbSearch?vplatform=2', {
         body: {
             "version": "25042201",
@@ -178,47 +178,47 @@ var rule = {
                 "n": "玄幻",
                 "v": "18"
             }]
-        }, {
+        }， {
             "key": "iyear",
             "name": "年代",
             "value": [{
                 "n": "全部",
                 "v": "-1"
-            }, {
+            }， {
                 "n": "2025",
                 "v": "2025"
             }, {
                 "n": "2024",
                 "v": "2024"
-            }, {
+            }， {
                 "n": "2023",
                 "v": "2023"
-            }, {
+            }， {
                 "n": "2022",
                 "v": "2022"
-            }, {
+            }， {
                 "n": "2021",
                 "v": "2021"
-            }, {
+            }， {
                 "n": "2020",
                 "v": "2020"
-            }, {
+            }， {
                 "n": "2019",
                 "v": "2019"
-            }, {
+            }， {
                 "n": "2018",
                 "v": "2018"
-            }, {
+            }， {
                 "n": "2017",
                 "v": "2017"
-            }, {
+            }， {
                 "n": "2016",
                 "v": "2016"
-            }, {
+            }， {
                 "n": "2015",
                 "v": "2015"
             }]
-        }],
+        }]，
         "movie": [{
             "key": "sort",
             "name": "排序",
@@ -232,16 +232,16 @@ var rule = {
                 "n": "好评",
                 "v": "81"
             }]
-        }, {
+        }， {
             "key": "type",
             "name": "类型",
             "value": [{
                 "n": "全部",
                 "v": "-1"
-            }, {
+            }， {
                 "n": "犯罪",
                 "v": "4"
-            }, {
+            }， {
                 "n": "励志",
                 "v": "2"
             }, {
@@ -692,7 +692,7 @@ var rule = {
     play_parse: true,
     lazy: $js.toString(() => {
         try {
-            let api = "http://210.16.160.81:8122/api/?key=w2wXDK657XUq29lrzW&url=" + input.split("?")[0];
+            let api = "http://140.210.9.53:8100/api/?key=9a23b051c3c3d857ab0b2eecf6e552c5&url=" + input.split("?")[0];
             console.log(api);
             let response = fetch(api, {
                 method: 'get',
